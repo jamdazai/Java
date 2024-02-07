@@ -1,5 +1,8 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+// James Furaque  - 101382608
+// Tenzin Thinley - 101454475
+// Carl Trinidad  - 101425882
+
 public class Main {
     public static void main(String[] args) {
         HugeInteger hi = new HugeInteger();

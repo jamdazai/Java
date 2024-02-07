@@ -1,3 +1,8 @@
+
+// James Furaque  - 101382608
+// Tenzin Thinley - 101454475
+// Carl Trinidad  - 101425882
+
 import java.lang.StringBuilder;
 public class HugeInteger {
     private boolean isPositive;
@@ -60,6 +65,8 @@ public class HugeInteger {
 
     // Additional Behaviours:
     // HugeInteger addPositive(HugeInteger num2)
+    // Returns a new HugeInteger containing the result of adding num2 to the stored number.
+    // You MUST assume num2 and the number being added to are BOTH positive.
     public HugeInteger addPositive(HugeInteger num2) {
         HugeInteger result = new HugeInteger();
         Node current1 = this.head;
@@ -84,11 +91,14 @@ public class HugeInteger {
     }
 
     // int compareTo (HugeInteger num2)
+    // Returns -1 if the number stored is less than num2
+    // Returns 0 if the number stored is equal to num2
+    // Returns 1 if the number stored is greater than num2
     public int compareTo(HugeInteger num2) {
         if (this.length < num2.length) {
-            return -1;
+            return -1;                                          // Number stored is less than 2
         } else if (this.length > num2.length) {
-            return 1;
+            return 1;                                           // Number stored is greater than 2
         } else {
             Node current1 = this.head;
             Node current2 = num2.head;
@@ -104,11 +114,13 @@ public class HugeInteger {
                 current2 = current2.next;
             }
 
-            return 0; // Both HugeIntegers are equal
+            return 0;                                           // Number stored is equal to num2
         }
     }
 
     // String toString()
+    // This is where we could print the results to String
+    // Returns a string representation of the number
     public String toString() {
         if (head == null){
             return "0";
@@ -125,6 +137,8 @@ public class HugeInteger {
     }
 
     // void concatenateDigit(int digit)
+    // Adds a digit to the end of the number (at the front of the list).
+    // Note: if the list is empty leading zeros should not be added.
     public void concatenateDigit(int digit) {
         if (head == null) {
             addDigit(digit);
@@ -138,6 +152,8 @@ public class HugeInteger {
     }
 
     // void addLast(int digit)
+    // Adds a digit to the front of the number (at the end of the list).
+    // This can be used in the addPositive method
     public void addLast(int digit) {
         addDigit(digit);
     }

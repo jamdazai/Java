@@ -1,3 +1,8 @@
+
+// James Furaque  - 101382608
+// Tenzin Thinley - 101454475
+// Carl Trinidad  - 101425882
+
 public class Node {
     int digit;
     Node next;
