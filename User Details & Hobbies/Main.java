@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author James Furaque / Jam Furaque
  * @version 1.1
  * In this version, I also implemented validations for
- * Age.
+ * Age & Street Number
 **/
 
 public class Main {
